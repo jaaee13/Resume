@@ -1,0 +1,791 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cambria;
+}
+
+body{
+    background-color: #E4FBFF;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: whitesmoke;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.2);
+}
+
+.container .left-side{
+    position: relative;
+    background: #7868E6;
+    padding: 40px;
+}
+
+.profText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.profText .imgBox{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profText .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profText h2{
+     color: white;
+     font-size: 30px;
+     margin-top: 20px;
+     text-transform: uppercase;
+     text-align: center;
+     font-weight: 600;
+     line-height: 30px;
+     letter-spacing: 1.5px;
+}
+
+.profText h4{
+    color: #F4EEFF;
+    font-size: 18px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contactInfo{
+    padding-top: 30px;
+}
+
+.contact{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.contactInfo ul{
+    position: relative;
+}
+
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li :hover{
+    color: #F4EEFF;
+    font-size: 20px;
+}
+
+.contactInfo ul li .icon a{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: black;
+}
+
+.contactInfo ul li .icon a :hover{
+    color: #F4EEFF;
+    transform: scale(1.5);
+}
+
+
+.contactInfo ul li span{
+    color: black;
+    font-weight: 300;
+}
+
+.socialMedia{
+    padding-top: 30px;
+}
+
+.media{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.socialMedia ul{
+    position: relative;
+}
+
+.socialMedia ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.socialMedia ul li :hover{
+    color: #F4EEFF;
+    font-size: 20px;
+}
+
+.socialMedia ul li .icon a{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: black;
+}
+
+.socialMedia ul li .icon a :hover{
+    color: #F4EEFF;
+    transform: scale(1.5);
+}
+
+.socialMedia ul li span{
+    color: black;
+    font-weight: 300;
+}
+
+.achievement{
+    padding-top: 30px;
+}
+
+.achieve{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.achievement ul{
+    position: relative;
+}
+
+.achievement ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.achievement ul li :hover{
+    color: #F4EEFF;
+    font-size: 18px;
+}
+
+.achievement ul li .icon a{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: black;
+}
+
+.achievement ul li .icon a :hover{
+    color: #F4EEFF;
+    transform: scale(1.5);
+}
+
+.hobbies{
+    padding-top: 30px;
+}
+
+.hobby{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.hobbies ul{
+    position: relative;
+}
+
+.hobbies ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.hobbies ul li :hover{
+    color: #F4EEFF;
+    font-size: 20px;
+}
+
+.hobbies ul li .icon a{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: black;
+}
+
+.hobbies ul li .icon a :hover{
+    color: #F4EEFF;
+    transform: scale(1.5);
+}
+
+.container .right-side{
+    position: relative;
+    background: #EDEEF7;
+    padding: 40px;
+}
+
+.aboutMe{
+    position: relative;
+}
+
+.aboutMe .about{
+    display: inline-block;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #3D2C8D;
+}
+
+.aboutDesc{
+    margin-top: 5px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.careerObj{
+    position: relative;
+    margin-top: 25px;
+}
+
+.careerObj .obj{
+    display: inline-block;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #3D2C8D;
+}
+
+.objDesc{
+    margin-top: 5px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.education{
+    position: relative;
+    margin-top: 25px;
+}
+
+.education .edu{
+    display: inline-block;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #3D2C8D;
+}
+
+.eduDesc{
+    margin-top: 5px;
+    border: 2px solid #3D2C8D;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+td, th{
+    border: 1px solid #3D2C8D;
+    padding: 2px;
+}
+
+.areaOfInterest{
+    position: relative;
+    margin-top: 25px;
+    display: block;
+    align-content: space-between;
+}
+
+.areaOfInterest .area{
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #3D2C8D;
+}
+
+.area-parent{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.areaDesc{
+    width: 100%;
+    font-weight: normal;
+}
+
+.areaTitle{
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.areaText{
+    font-size: 16px;
+    text-align: justify;
+}
+
+.experience{
+    position: relative;
+    margin-top: 25px;
+    display: block;
+    align-content: space-between;
+}
+
+.experience .exp{
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #3D2C8D;
+}
+
+.exp-parent{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.expDesc{
+    width: 100%;
+    font-weight: normal;
+}
+
+.expTitle{
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.expText{
+    font-size: 16px;
+    text-align: justify;
+}
+
+.skills{
+    position: relative;
+    margin-top: 25px;
+}
+
+.skills .skill{
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: black;
+}
+
+.skill{
+    display: block;
+    justify-content: space-between;
+}
+
+.technical{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.technical h4{
+    display: inline-block;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.technical ul li{
+    list-style: none;
+    font-size: 16px;
+    padding: 0.5%;
+}
+
+.nonTechnical{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.nonTechnical h4{
+    display: inline-block;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.nonTechnical ul li{
+    padding: 0.5%;
+    list-style: none;
+    font-size: 16px;
+}
+
+.projUndertaken{
+    position: relative;
+    margin-top: 25px;
+    display: block;
+    align-content: space-between;
+}
+
+.projUndertaken .proj{
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #3D2C8D;
+}
+
+.proj-parent{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.padd{
+    margin-top: 10px;
+}
+
+.projDesc{
+    width: 100%;
+    font-weight: normal;
+}
+
+.projTitle{
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.projText{
+    font-size: 16px;
+    text-align: justify;
+}
+
+.projText a{
+    /* text-decoration: none; */
+    color: black;
+}
+
+/* meida queries */
+/* css for mobile */
+@media (max-width: 480px){
+    .body{
+        background-color: #E4FBFF;
+    }
+
+    .container{
+        width: 100%;
+        min-height: 500px;
+        margin: 15px;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .container .left-side{
+        padding: 10px;
+        position: static;
+    }
+
+    .profText{
+        padding-bottom: 15px;
+    }
+
+    .profText .imgBox{
+        width: 85px;
+        height: 85px;
+        margin-top: 10px;
+    }
+
+    .profText h2{
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+
+    .profText h4{
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+    }
+    .contactInfo{
+        padding-top: 10px;
+        margin: 0px;
+    }
+
+    .contact{
+        font-size: 14px;
+        line-height: 15px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        margin-bottom: 10px;
+    }
+
+    .contactInfo ul li{
+        margin: 5px 0;
+        font-size: 9px;
+        font-weight: bold;
+    }
+
+    .contactInfo ul li .icon a{
+        width: 12px;
+        font-size: 10px;
+    }
+
+    .contactInfo ul li span{
+        font-weight: normal;
+    }
+
+    .socialMedia{
+        padding-top: 15px;
+    }
+
+    .media{
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        margin-bottom: 10px;
+    }
+
+    .socialMedia ul li{
+        margin: 5px 0;
+        font-size: 9px;
+    }
+
+    .socialMedia ul li .icon a{
+        width: 12px;
+        font-size: 10px;
+    }
+
+    .achievement{
+        padding-top: 15px;
+    }
+
+    .achieve{
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        margin-bottom: 10px;
+    }
+
+    .achievement ul li{
+        margin: 5px 0;
+        font-size: 9px;
+    }
+
+    .achievement ul li .icon a{
+        width: 12px;
+        font-size: 10px;
+    }
+
+    .hobbies{
+        padding-top: 15px;
+    }
+
+    .hobby{
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        margin-bottom: 10px;
+    }
+
+    .hobbies ul li{
+        margin: 5px 0;
+        font-size: 9px;
+    }
+
+    .hobbies ul li .icon a{
+        width: 12px;
+        font-size: 10px;
+    }
+
+    .container .right-side{
+        padding: 10px;
+        position: static;
+    }
+
+    .aboutMe .about{
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+
+    .aboutDesc{
+        margin-top: 2px;
+        font-size: 10px;
+    }
+
+    .careerObj .obj{
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+
+    .objDesc{
+        margin-top: 2px;
+        font-size: 10px;
+    }
+
+    .education{
+        margin-top: 10px;
+    }
+
+    .education .edu{
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+
+    .eduDesc{
+        border: 1px solid #3D2C8D;
+        margin-top: 2px;
+        font-size: 10px;
+    }
+
+    td, th{
+        border: 0.5px solid #3D2C8D;;
+        padding: 0px;
+    }
+
+    .areaOfInterest{
+        margin-top: 10px;
+    }
+
+    .areaOfInterest .area{
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+
+    .area-parent{
+        margin-top: 5px;
+    }
+
+    .areaTitle{
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+
+    .areaText{
+        font-size: 10px;
+    }
+
+    .experience{
+        margin-top: 10px;
+    }
+
+    .experience .exp{
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+
+    .exp-parent{
+        margin-top: 5px;
+    }
+
+    .expTitle{
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+
+    .expText{
+        font-size: 10px;
+    }
+
+    .skills{
+        margin-top: 10px;
+    }
+
+    .skills .skill{
+        font-size: 14px;
+        letter-spacing: 0px;
+        margin-bottom: 0%;
+    }
+
+    .technical{
+        display: list-item;
+        list-style: none;
+    }
+
+    .technical i{
+        width: 0px;
+        font-size: 0px;
+    }
+
+    .technical h4{
+        margin-top: 0px;
+        font-size: 12px;
+    }
+
+    .technical ul li{
+        font-size: 10px;
+        margin-right: 0px;
+    }
+
+    .nonTechnical{
+        display: list-item;
+        list-style: none;
+    }
+
+    .nonTechnical i{
+        width: 0px;
+        font-size: 0px;
+    }
+
+    .nonTechnical h4{
+        margin-top: 0px;
+        font-size: 12px;
+    }
+
+    .nonTechnical ul li{
+        font-size: 10px;
+    }
+
+    .projUndertaken{
+        margin-top: 10px;
+    }
+
+    .projUndertaken .proj{
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+
+    .padd{
+        margin-top: 5px;
+    }
+
+    .projTitle{
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+
+    .projText{
+        font-size: 10px;
+    }
+
+
+}
